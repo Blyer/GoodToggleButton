@@ -11,6 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener
 {
 	private OnOffButton button;
+	private OnOffButton button1;
+	private OnOffButton button2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -19,9 +21,12 @@ public class MainActivity extends Activity implements OnClickListener
 		setContentView(R.layout.activity_main);
 		button = (OnOffButton)findViewById(R.id.onOffButton);
 		button.setOnClickListener(this);
+		button1 = (OnOffButton)findViewById(R.id.onOffButton1);
+		button1.setOnClickListener(this);
+		button2 = (OnOffButton)findViewById(R.id.onOffButton2);
+		button2.setOnClickListener(this);
 	}
 
-	@Override
 	public void onClick(View v)
 	{
 		if (v.getId() == R.id.onOffButton)

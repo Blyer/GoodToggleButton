@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="OnOffButton">
+        <attr name="current_state" format="boolean"/>
+        <attr name="scale_ratio" format="float"/>
+    </declare-styleable>
+        
+</resources>
